@@ -1,0 +1,13 @@
+Pentru implementarea temei m-am folosit de structurile de date: Treap, Trie si pair.
+
+Fiecare nod Trie contine 8 fii de tip Trie corespunzatori numerelor 0-6 (echivalenta 2-9 pentru telefon), o structura Treap in care se vor retine eventual cuvintele care se termina la nodul curent din Trie , o variabila booleana ok pentru care ok = 1 daca se termina vreun cuvant la nodul resectiv, ok = 0, altfel; variabila total retine cate cuvinte sunt retinute in total in treap-ul din nodul curent.
+
+Clasa Algorithm prezinta o metoda resolve care prelucreaza datele din fiecare fisier. Astfel se citesc primele n cuvinte de inserat apelandu-se totodata metoda insert din cadrul Trie-ului.
+Pentru cele m cuvinte, se apleaza metoda find din cadrul Trie-ului.
+
+Pentru inserarea unui cuvant in cadrul trie-ului, acesta este procesat litera cu litera si transformat in echivalentul sau 0-8;
+
+Metoda find apeleaza findK din cadrul Treap-ului pentru afisarea cuvantului cu numarul de ordine k+1. 
+In momentul in care s-a gasit, se sterge cuvantul respectiv, pentru a fi inserat apoi cu noua frecventa in cadrul Treap-ului.
+
+
